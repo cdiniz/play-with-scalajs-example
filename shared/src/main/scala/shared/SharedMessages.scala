@@ -1,5 +1,3 @@
 package shared
 
-object SharedMessages {
-  def itWorks = "It works!"
-}
+case class Message(message: String)
