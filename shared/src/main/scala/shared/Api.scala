@@ -1,5 +1,5 @@
 package shared
 
 trait Api{
-  def echo(message : String) : Message
+  def greet(name : String) : Message
 }

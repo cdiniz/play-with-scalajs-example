@@ -1,6 +1,8 @@
 package controllers
 
 
+import java.util.Date
+
 import play.api.mvc._
 import shared.{Api, Message}
 import upickle.Js
@@ -25,6 +27,6 @@ class Application extends Controller with Api {
     }
   }
 
-  def echo(message : String) = Message(message)
+  def greet(name : String) =  Message(s"Greetings from play server, $name! Time is now ${new Date}")
 
 }
