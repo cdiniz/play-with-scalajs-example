@@ -28,15 +28,11 @@ lazy val client = (project in file("client")).settings(
     "com.lihaoyi" %%% "upickle" % "0.4.3",
     "com.github.japgolly.scalajs-react" %%% "core" % "0.11.3",
     "com.github.japgolly.scalajs-react" %%% "extra" % "0.11.3",
-    "com.github.japgolly.scalacss" %%% "ext-react" % "0.5.0",
-    "org.webjars" % "font-awesome" % "4.3.0-1" % Provided,
     "me.chrons" %%% "diode" % "1.1.0",
     "me.chrons" %%% "diode-react" % "1.1.0",
     "com.lihaoyi" %%% "autowire" % "0.2.6"
   ),
   jsDependencies ++= Seq(
-    "org.webjars" % "jquery" % "1.11.1" / "jquery.js" minified "jquery.min.js",
-    "org.webjars" % "bootstrap" % "3.3.6" / "bootstrap.js" minified "bootstrap.min.js" dependsOn "jquery.js",
     "org.webjars.bower" % "react" % "15.3.2"
       /        "react-with-addons.js"
       minified "react-with-addons.min.js"
